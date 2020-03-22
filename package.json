@@ -1,0 +1,26 @@
+{
+    "name": "@baidu/node-logger",
+    "version": "2.0.6",
+    "description": "node logger",
+    "main": "index.js",
+    "scripts": {
+        "pub": "npm publish --registry=http://registry.npmjs.org",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "node",
+        "logger"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/imcooder/node-logger.git"
+    },
+    "author": "imcooder@gmail.com",
+    "license": "ISC",
+    "dependencies": {
+        "colors": "^1.4.0",
+        "fast-strftime": "^1.1.1",
+        "mkdirp": "^0.5.1",
+        "uuid": "^3.3.3"
+    }
+}
