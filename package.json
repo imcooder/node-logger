@@ -1,6 +1,6 @@
 {
     "name": "@imcooder/node-logger",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "description": "node logger",
     "main": "index.js",
     "scripts": {
