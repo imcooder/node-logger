@@ -5,10 +5,10 @@ node上日志输出库，目标是轻量 性能要优于log4js
 [![npm download][download-image]][download-url]
 [![David deps][david-image]][david-url]
 
-[npm-image]: https://img.shields.io/npm/v/node-logger.svg
-[npm-url]: https://npmjs.com/package/node-logger
-[download-image]: https://img.shields.io/npm/dm/node-logger.svg
-[download-url]: https://npmjs.com/package/node-logger
+[npm-image]: https://img.shields.io/npm/v/@imcooder/node-logger.svg
+[npm-url]: https://npmjs.com/package/@imcooder/node-logger
+[download-image]: https://img.shields.io/npm/dm/@imcooder/node-logger.svg
+[download-url]: https://npmjs.com/package/@imcooder/node-logger
 [david-image]: https://img.shields.io/david/imcooder/node-logger.svg
 [david-url]: https://david-dm.org/imcooder/node-logger
 
