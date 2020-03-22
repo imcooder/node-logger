@@ -1,10 +1,11 @@
 {
     "name": "@imcooder/node-logger",
-    "version": "2.0.4",
+    "version": "2.0.6",
     "description": "node logger",
     "main": "index.js",
     "scripts": {
         "pub": "npm publish --access=public --registry=http://registry.npmjs.org",
+        "i": "npm install --registry=http://registry.npmjs.org",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
