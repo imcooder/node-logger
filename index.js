@@ -6,8 +6,12 @@
 'use strict';
 
 var Logger = require('./lib/logger');
+const LogCleaner = require('./lib/cleaner');
 let loggerCache = {
 };
+
+// Create global cleaner instance
+let logCleaner = null;
 
 const defaultConfig = {
     console: {
@@ -25,6 +29,12 @@ var NodeLogger = {
         if (config.replaceConsole) {
             NodeLogger.replaceConsole();
         }
+
+        // Start automatic log cleanup service
+        if (!logCleaner) {
+            logCleaner = new LogCleaner();
+        }
+        logCleaner.start(config);
     },
     getLogger: function (app) {
         if (loggerCache[app]) {
@@ -71,6 +81,12 @@ var NodeLogger = {
     },
     shutdown() {
         enabled = false;
+
+        // Stop automatic cleanup service
+        if (logCleaner) {
+            logCleaner.stop();
+        }
+
         let exitPromises = [];
         for (const name in loggerCache) {
             let loggerItem = loggerCache[name];
@@ -83,6 +99,13 @@ var NodeLogger = {
             return;
         }
         return Promise.all(exitPromises);
+    },
+
+    // Manually execute cleanup once (for testing)
+    async cleanupNow() {
+        if (logCleaner) {
+            await logCleaner.cleanupNow();
+        }
     }
 };
 

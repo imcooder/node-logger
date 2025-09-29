@@ -1,7 +1,7 @@
 {
     "name": "@imcooder/node-logger",
-    "version": "2.0.10",
-    "description": "node logger",
+    "version": "2.1.0",
+    "description": "A lightweight, high-performance Node.js logging library with auto cleanup",
     "main": "index.js",
     "scripts": {
         "pub": "npm publish --access=public --registry=http://registry.npmjs.org",
@@ -10,7 +10,15 @@
     },
     "keywords": [
         "node",
-        "logger"
+        "logger",
+        "logging",
+        "log4js",
+        "performance",
+        "auto-rotate",
+        "cleanup",
+        "ttl",
+        "async",
+        "tracing"
     ],
     "repository": {
         "type": "git",

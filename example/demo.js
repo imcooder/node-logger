@@ -15,14 +15,16 @@ let config = {
         time_format: '%F %T.%L', // https://github.com/samsonjs/strftime
         "auto_rotate": true,
         "console": true,
-        "level": "DEBUG"
+        "level": "DEBUG",
+        "ttl_hour": 1  // Log file TTL 72 hours (3 days) - this is also the default value
     },
     trace: {
         time_format: '%F %T.%L',
         'log_file': path.join(logDir, './trace.log'),
         "auto_rotate": true,
         "console": true,
-        "level": "debug"
+        "level": "debug",
+        "ttl_hour": 1  // Log file TTL 24 hours (1 day)
     },
     "replaceConsole": true
 };
@@ -64,8 +66,8 @@ tracer.debug('test_tracer');
 tracer.dumps();
 async function run() {
     for (let i = 0; i < max; i++) {
-        await wait(30000);
-        logger.debug('logid:%s main:%s config:%j', i, { a: 1 }, config);
+        await wait(100);
+        logger.debug('logid:%s main:%s', i, { a: 1 });
     }
 }
 run();
