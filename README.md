@@ -1,4 +1,4 @@
-# node-logger
+# logger-node
 
 A lightweight, high-performance Node.js logging library designed to be more efficient than log4js.
 
@@ -10,8 +10,8 @@ A lightweight, high-performance Node.js logging library designed to be more effi
 [npm-url]: https://npmjs.com/package/@imcooder/node-logger
 [download-image]: https://img.shields.io/npm/dm/@imcooder/node-logger.svg
 [download-url]: https://npmjs.com/package/@imcooder/node-logger
-[david-image]: https://img.shields.io/david/imcooder/node-logger.svg
-[david-url]: https://david-dm.org/imcooder/node-logger
+[david-image]: https://img.shields.io/david/imcooder/logger-node.svg
+[david-url]: https://david-dm.org/imcooder/logger-node
 
 ## Features
 

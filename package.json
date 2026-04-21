@@ -1,6 +1,6 @@
 {
-    "name": "@imcooder/node-logger",
-    "version": "2.1.0",
+    "name": "@imcooder/logger-node",
+    "version": "2.1.1",
     "description": "A lightweight, high-performance Node.js logging library with auto cleanup",
     "main": "index.js",
     "scripts": {
@@ -22,7 +22,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/imcooder/node-logger.git"
+        "url": "https://github.com/imcooder/logger-node.git"
     },
     "author": "imcooder@gmail.com",
     "license": "ISC",
