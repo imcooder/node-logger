@@ -1,5 +1,5 @@
 {
-    "name": "@imcooder/logger-node",
+    "name": "@imcooder/node-logger",
     "version": "2.1.1",
     "description": "A lightweight, high-performance Node.js logging library with auto cleanup",
     "main": "index.js",
